@@ -8,7 +8,7 @@ class CashbackHackerTest {
 
     @Test
     void shoulReturn100IfAmountIs900() {
-        CashbackHacker cashbackHacker = new CashbackHacker();
+        CashbackHackerService cashbackHacker = new CashbackHackerService();
         int amount = 900;
         int actual = cashbackHacker.remain(amount);
         int expected = 100;
@@ -17,7 +17,7 @@ class CashbackHackerTest {
 
     @Test
     void shouldReturn0IfAmountIs1000() {
-        CashbackHacker cashbackHacker = new CashbackHacker();
+        CashbackHackerService cashbackHacker = new CashbackHackerService();
         int amount = 1000;
         int actual = cashbackHacker.remain(amount);
         int expected = 0;
@@ -26,7 +26,7 @@ class CashbackHackerTest {
 
     @Test
     void shouldReturn0IfAmountIs1100() {
-        CashbackHacker cashbackHacker = new CashbackHacker();
+        CashbackHackerService cashbackHacker = new CashbackHackerService();
         int amount = 1100;
         int actual = cashbackHacker.remain(amount);
         int expected = 0;
@@ -35,7 +35,7 @@ class CashbackHackerTest {
 
     @Test
     void shouldReturn1000IfAmountIs0() {
-        CashbackHacker cashbackHacker = new CashbackHacker();
+        CashbackHackerService cashbackHacker = new CashbackHackerService();
         int amount = 0;
         int actual = cashbackHacker.remain(amount);
         int expected = 1000;
